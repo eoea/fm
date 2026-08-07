@@ -112,7 +112,7 @@ func main() {
 					originalPath := filepath.Join(fds[i].directoryPath, fds[i].orignalFileName)
 					newPath      := filepath.Join(fds[i].directoryPath, fds[i].newFileName)
 					if _, err := os.Stat(newPath); err == nil {
-						fmt.Printf("File '%s' cannot be renamed to '%s' because it already exists, skipping.\n", originalPath, newPath)
+						fmt.Printf("File '%s' cannot be renamed to '%s' because it already exists, skipped.\n", originalPath, newPath)
 						continue
 					}
 					err := os.Rename(originalPath, newPath)
