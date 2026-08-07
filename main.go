@@ -16,10 +16,6 @@ type FileDirectory struct {
 	newFileName 		string
 }
 
-func (f FileDirectory) String() string {
-	return f.orignalFileName
-}
-
 func main() {
 	if len(os.Args) > 1 {
 
