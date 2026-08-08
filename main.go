@@ -90,6 +90,9 @@ func main() {
 					fmt.Printf("%-40s -> %-40s\n",fds[i].orignalFileName, fds[i].newFileName)
 				}
 			}
+		} else {
+			fmt.Println("error: missmatch lines, first list was modified incorrectly")
+			os.Exit(1)
 		}
 
 		fmt.Println("Confirm to apply changes N/y")
