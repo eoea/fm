@@ -82,8 +82,8 @@ func main() {
 			}
 		}
 
-		fmt.Println("Dry Run: these will be renamed:")
 		if len(lines) == len(fds) {
+			fmt.Println("Dry Run: these will be renamed:")
 			for i := 0; i < len(lines); i++ {
 				fds[i].newFileName = lines[i]
 				if fds[i].orignalFileName != fds[i].newFileName {
